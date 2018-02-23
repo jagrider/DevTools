@@ -1,6 +1,15 @@
 /**
  * This file contains useful tools and methods used with JUnit test cases.
  *
+ * This file and its contents are intended to be used for the Introduction
+ * to Object Oriented Programming course, CS18000. Any use of this file
+ * within CS18000 should cite any use of this file or its contents, as
+ * well as the original author.
+ *
+ * Any use outside of the CS18000 course must adhere to the following
+ * license and additional conditions:
+ *
+ * =========================================================================
  * Copyright (C) 2018  Jonathan Grider
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,11 +24,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * =========================================================================
  * Additional terms:
- * This file and its contents are intended to be used for the Introduction
- * to Object Oriented Programming course, CS18000. Any use outside of the
- * CS18000 course must also adhere to the following conditions:
  *
  * Use of this file and its contents must be presented with information
  * specifying the authors of such works, including the original copyright
