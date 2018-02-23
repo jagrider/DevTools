@@ -70,6 +70,37 @@ public class JUnitTools {
         stopRecording();
     }
 
+
+    @Test (timeout = 100)
+    public void exampleTest() {
+
+        /* Do any variable setup */
+        String input = "Some input string";
+        String input2 = "Another input string";
+        String message = "A descriptive error message";
+        String expected = "Some expected result string";
+
+        // Use multiline to combine input strings. They are now separated by a newline character
+        String actualInput = multiline(input, input2);
+
+        // Set the system input
+        setSystemIn(actualInput);
+
+        // start recording for output
+        recordOutput();
+
+        /* run the program you are trying to test */
+
+        // Get the program's output
+        String actualOutput = getRecording();
+
+        // Make an assertion
+        // assertFuzzyEquals ignores spaces, newlines and character case
+        assertFuzzyEquals(message, expected, actualOutput);
+
+    }
+
+
     /**
      * Terminates all lines with a system dependent newline
      * character and replaces System.in
